@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GuessTheNumber</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img class="logo" src="./Img/logo.png" alt="logo website" />
+      <div class="guess">
+        <input
+          type="text"
+          class="inputText"
+          id="userInput"
+          placeholder="Guess"
+        />
+        <button id="submitBtn" class="submitBtn">Send</button>
+      </div>
+
+      <div id="infoDiv" class="info"></div>
+      <div class="life">
+        <img
+          id="heart1"
+          class="heart-image"
+          src="./Img/heart-full.png"
+          alt="heart-image"
+        />
+        <img
+          id="heart2"
+          class="heart-image"
+          src="./Img/heart-full.png"
+          alt="heart-image"
+        />
+        <img
+          id="heart3"
+          class="heart-image"
+          src="./Img/heart-full.png"
+          alt="heart-image"
+        />
+      </div>
+    </div>
+    <div id="win-popup" class="popup">
+      <p id="win-message">Congratulations, you guessed the number!</p>
+      <button id="restart-btn-win">Play Again</button>
+    </div>
+    <div id="lose-popup" class="popup">
+      <p id="lose-message">Sorry, you lost! Try again.</p>
+      <button id="restart-btn-lose">Play Again</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
